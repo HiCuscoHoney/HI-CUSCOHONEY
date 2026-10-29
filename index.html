@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0c0805">
+<title>Hi! Cusco Honey · Miel de abeja de Cusco</title>
+<meta name="description" content="Miel de abeja de floración silvestre, panal con miel y polen de abeja, producidos y envasados en Cusco.">
+<link rel="icon" href="img/emblema.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Archivo+Black&display=swap" rel="stylesheet">
+<style>
+.hch{--ink:#150f09;--kraft:#c8a06b;--kl:#ecd9b3;--gold:#e5a52e;--amb:#a9631a;--wa:#1f8f4a;font-family:'DM Sans',system-ui,sans-serif;color:var(--ink);line-height:1.65;overflow:hidden;font-size:17px}
+.hch *{box-sizing:border-box;margin:0;padding:0}
+.hch img{max-width:100%;height:auto;display:block}
+.hch a{text-decoration:none;color:inherit}
+.hch h1,.hch h2,.hch h3{font-family:'Fraunces',Georgia,serif;font-weight:900;line-height:1.05;letter-spacing:-.01em}
+.hch .w{max-width:1120px;margin:0 auto;padding:0 24px;position:relative}
+.hch .btn{display:inline-block;padding:14px 28px;border-radius:999px;font-weight:700;transition:transform .25s,box-shadow .25s;cursor:pointer}
+.hch .b1{background:linear-gradient(135deg,#f3bf4a,var(--amb));color:#1a1007;box-shadow:0 8px 24px rgba(229,165,46,.35)}
+.hch .b2{border:2px solid rgba(243,191,74,.7);color:#f6e8cc}
+.hch .btn:hover{transform:translateY(-3px)}
+.hch .b1:hover{box-shadow:0 14px 32px rgba(229,165,46,.5)}
+/* HERO */
+.hch .hero{position:relative;color:#f6e8cc;padding:22px 0 130px;background:radial-gradient(55% 70% at 74% 48%,rgba(229,165,46,.4),transparent 70%),radial-gradient(45% 55% at 0% 100%,rgba(169,99,26,.4),transparent 70%),#0c0805}
+.hch .hero::before{content:"";position:absolute;inset:0;opacity:.13;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100'%3E%3Cpath d='M28 66 0 50V16L28 0l28 16v34zM28 66v34M0 50v34l28 16 28-16V50' fill='none' stroke='%23e5a52e' stroke-width='1.4'/%3E%3C/svg%3E");-webkit-mask-image:linear-gradient(100deg,#000,transparent 65%);mask-image:linear-gradient(100deg,#000,transparent 65%)}
+.hch nav{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:56px}
+.hch nav img{width:64px;height:64px;transition:transform .6s}.hch nav img:hover{transform:rotate(-12deg) scale(1.08)}
+.hch nav div{display:flex;gap:26px;font-weight:500;font-size:15px}
+.hch nav div a{opacity:.85;transition:color .2s,opacity .2s}
+.hch nav div a:hover{color:var(--gold);opacity:1}
+.hch .hg{display:grid;grid-template-columns:1fr 1.05fr;gap:30px;align-items:center}
+.hch .hero h1{font-size:clamp(2.6rem,5.6vw,4.6rem);background:linear-gradient(120deg,#fff3d3 20%,var(--gold) 80%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hch .hero p.l{margin:22px 0 32px;max-width:460px;font-size:1.1rem;color:#e8d5b0}
+.hch .hero .bs{display:flex;flex-wrap:wrap;gap:14px}
+.hch .jars{display:flex;align-items:flex-end;justify-content:center;padding-right:2%}
+.hch .jars img{width:38%;mix-blend-mode:screen;animation:fl 6s ease-in-out infinite}
+.hch .jars img:nth-child(1){margin-bottom:-6%;margin-right:-7%;animation-delay:-2s}
+.hch .jars img:nth-child(2){z-index:2;width:42%;animation-delay:0s}
+.hch .jars img:nth-child(3){margin-bottom:-3%;margin-left:-7%;animation-delay:-4s}
+@keyframes fl{50%{transform:translateY(-12px)}}
+.hch .drip{position:absolute;left:0;top:-1px;width:100%;height:64px;z-index:3}
+/* SECCIONES */
+.hch .kraft{position:relative;padding:130px 0 90px;background:linear-gradient(180deg,#dcb983,var(--kraft) 55%,#b98a52)}
+.hch .kraft h2,.hch .dark h2{font-size:clamp(2rem,4vw,3.1rem)}
+.hch .kraft .sub{max-width:560px;margin:14px 0 48px;color:#3b2a17}
+.hch .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.hch .card{background:radial-gradient(90% 60% at 50% 40%,#2e1c0a,#090604);border:1px solid rgba(229,165,46,.4);border-radius:30px 30px 30px 8px;padding:26px 24px 28px;color:#f6e8cc;text-align:center;transition:transform .35s,box-shadow .35s}
+.hch .card:hover{transform:translateY(-8px);box-shadow:0 22px 44px rgba(40,22,5,.45)}
+.hch .card img{mix-blend-mode:screen;margin:0 auto 6px;width:78%}
+.hch .card h3{font-size:1.7rem;color:var(--gold)}
+.hch .card p{margin:8px 0 20px;font-size:.98rem;color:#dcc79f}
+.hch .card .btn{padding:11px 22px;font-size:.95rem;background:rgba(229,165,46,.14);border:1px solid var(--gold);color:var(--gold)}
+.hch .card .btn:hover{background:var(--gold);color:#1a1007}
+.hch .dark{position:relative;padding:100px 0;color:#f6e8cc;background:radial-gradient(50% 50% at 15% 25%,rgba(229,165,46,.2),transparent 70%),radial-gradient(50% 50% at 90% 85%,rgba(169,99,26,.28),transparent 70%),#0c0805}
+.hch .row{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.hch .row+.row{margin-top:96px}
+.hch .row.rev .tx{order:2}
+.hch .row img{mix-blend-mode:screen;border-radius:24px}
+.hch .row .tx p{margin:16px 0 26px;color:#e0cca4;max-width:470px}
+.hch .row ul{list-style:none;margin-bottom:28px;display:flex;flex-wrap:wrap;gap:10px}
+.hch .row li{padding:7px 16px;border-radius:999px;font-size:.9rem;border:1px solid rgba(229,165,46,.5);background:linear-gradient(135deg,rgba(229,165,46,.18),rgba(169,99,26,.1))}
+.hch .row h2{background:linear-gradient(120deg,#fff3d3,var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hch .why{padding:96px 0;background:linear-gradient(180deg,#b98a52,#d9b57d 45%,var(--kraft))}
+.hch .why .wg{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+.hch .why .em{width:100%;max-width:380px;margin:auto;filter:drop-shadow(0 18px 28px rgba(60,35,8,.45));transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.hch .why .em:hover{transform:rotate(-6deg) scale(1.03)}
+.hch .vals{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px}
+.hch .val{padding:20px 22px;background:rgba(255,246,224,.4);border-left:5px solid var(--amb);border-radius:4px 20px 20px 4px;backdrop-filter:blur(2px)}
+.hch .val b{display:block;font-family:'Fraunces',serif;font-size:1.2rem;margin-bottom:2px}
+.hch .val span{font-size:.93rem;color:#3b2a17}
+.hch .cta{position:relative;margin:0 auto;max-width:1120px;border-radius:36px;overflow:hidden;color:#f6e8cc;background:linear-gradient(95deg,#0c0805 38%,rgba(12,8,5,.7) 60%,rgba(12,8,5,.05)),url(img/trio.webp) right center/cover #0c0805;padding:90px 56px;min-height:420px;display:flex;align-items:center}
+.hch .cta div{max-width:440px}
+.hch .cta h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:14px;background:linear-gradient(120deg,#fff3d3,var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hch .cta p{margin-bottom:26px;color:#e8d5b0}
+.hch .ctaw{padding:0 24px 90px;background:linear-gradient(180deg,var(--kraft),#a97a45)}
+.hch .b3{background:var(--wa);color:#fff;box-shadow:0 8px 24px rgba(31,143,74,.4)}
+.hch footer{background:linear-gradient(180deg,#1a1007,#0c0805);color:#cdb78e;padding:50px 0 34px;font-size:.9rem}
+.hch footer .w{display:flex;flex-wrap:wrap;gap:28px;align-items:center;justify-content:space-between}
+.hch footer img{width:84px}
+.hch footer small{display:block;max-width:560px;margin-top:6px;opacity:.75}
+.hch footer a{color:var(--gold)}
+/* ANIMACIÓN AL DESPLAZAR */
+.hch .rv{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s}
+.hch .rv.on{opacity:1;transform:none}
+.hch .card.rv:nth-child(2){transition-delay:.12s}.hch .card.rv:nth-child(3){transition-delay:.24s}
+@media(max-width:860px){
+.hch .hg,.hch .row,.hch .why .wg{grid-template-columns:1fr}
+.hch .cards{grid-template-columns:1fr;max-width:420px;margin:auto}
+.hch .row.rev .tx{order:0}
+.hch nav div{display:none}
+.hch .vals{grid-template-columns:1fr}
+.hch .cta{padding:60px 28px;background:linear-gradient(180deg,rgba(12,8,5,.92) 45%,rgba(12,8,5,.45)),url(img/trio.webp) center/cover #0c0805}
+.hch .why .em{max-width:260px}
+}
+@media(prefers-reduced-motion:reduce){.hch *{animation:none!important;transition:none!important}.hch .rv{opacity:1;transform:none}}
+
+html,body{margin:0!important;padding:0!important;background:#0c0805!important}
+.entry-content,.site-content,.content-area,.site-main,.page .entry-content,.ast-container,.container,#content,main{max-width:none!important;padding:0!important;margin:0!important}
+.hch .ctaw{padding:0 24px 90px}
+.hch .cta{margin:0 auto}
+/* MÁS ANIMACIONES */
+.hch .btn{position:relative;overflow:hidden;isolation:isolate}
+.hch .btn::after{content:"";position:absolute;top:0;left:-70%;width:50%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);transition:left .7s;z-index:-1}
+.hch .btn:hover::after{left:130%}
+.hch .btn:active{transform:translateY(0) scale(.97)}
+.hch .b1,.hch .b3{animation:pulso 3s ease-in-out infinite}
+@keyframes pulso{0%,100%{box-shadow:0 8px 24px rgba(229,165,46,.35)}50%{box-shadow:0 8px 34px rgba(229,165,46,.7)}}
+.hch .b3{animation-name:pulsoW}
+@keyframes pulsoW{0%,100%{box-shadow:0 8px 24px rgba(31,143,74,.35)}50%{box-shadow:0 8px 34px rgba(31,143,74,.75)}}
+.hch .card:hover img{transform:scale(1.07) rotate(-2deg)}
+.hch .card img{transition:transform .5s}
+.hch .row li{transition:transform .25s,background .25s}
+.hch .row li:hover{transform:translateY(-3px);background:rgba(229,165,46,.35)}
+.hch .val{transition:transform .3s,background .3s}
+.hch .val:hover{transform:translateX(8px);background:rgba(255,246,224,.7)}
+.hch .row img{transition:transform .6s}
+.hch .row .rv:hover img{transform:scale(1.04)}
+.hch nav div a{position:relative}
+.hch nav div a::after{content:"";position:absolute;left:0;bottom:-4px;width:0;height:2px;background:var(--gold);transition:width .3s}
+.hch nav div a:hover::after{width:100%}
+.hch .bee{position:absolute;font-size:26px;z-index:4;pointer-events:none;animation:vuelo 14s linear infinite}
+@keyframes vuelo{0%{transform:translate(-60px,0) rotate(0)}25%{transform:translate(25vw,-40px) rotate(8deg)}50%{transform:translate(55vw,20px) rotate(-6deg)}75%{transform:translate(80vw,-30px) rotate(6deg)}100%{transform:translate(110vw,10px) rotate(0)}}
+/* INFO DE PRODUCTO */
+.hch .info{padding:96px 0;background:radial-gradient(50% 60% at 85% 10%,rgba(229,165,46,.2),transparent 70%),#140d07;color:#f6e8cc}
+.hch .info h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:12px;background:linear-gradient(120deg,#fff3d3,var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hch .info .sub{max-width:600px;color:#dcc79f;margin-bottom:44px}
+.hch .ig{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.hch .ib{padding:26px 24px;border-radius:26px 26px 26px 6px;border:1px solid rgba(229,165,46,.35);background:linear-gradient(160deg,rgba(229,165,46,.14),rgba(169,99,26,.05));transition:transform .35s,border-color .35s}
+.hch .ib:hover{transform:translateY(-6px);border-color:var(--gold)}
+.hch .ib h3{font-size:1.3rem;color:var(--gold);margin-bottom:8px}
+.hch .ib p,.hch .ib li{font-size:.97rem;color:#e0cca4}
+.hch .ib ul{padding-left:18px}
+.hch .faq{margin-top:56px;max-width:760px}
+.hch details{border-bottom:1px solid rgba(229,165,46,.3);padding:16px 0}
+.hch summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:12px;transition:color .2s}
+.hch summary::after{content:"+";font-size:1.4rem;color:var(--gold);transition:transform .3s}
+.hch details[open] summary::after{transform:rotate(45deg)}
+.hch summary:hover{color:var(--gold)}
+.hch details p{margin-top:10px;color:#dcc79f}
+@media(max-width:860px){.hch .ig{grid-template-columns:1fr}.hch .bee{display:none}}
+
+/* NOMBRE + ELEMENTOS DEL LOGO */
+.hch nav .brand{display:flex;align-items:center;gap:14px}
+.hch nav .brand>img{width:84px;height:84px}
+.hch .nm{font-family:'Archivo Black','Fraunces',sans-serif;font-size:clamp(1.25rem,2.6vw,1.75rem);line-height:.92;letter-spacing:.01em;background:linear-gradient(120deg,#fff3d3 15%,var(--gold) 90%);-webkit-background-clip:text;background-clip:text;color:transparent;transition:letter-spacing .4s}
+.hch .brand:hover .nm{letter-spacing:.05em}
+.hch .hx{display:flex;flex-direction:column;align-items:center;height:78px;color:var(--gold)}
+.hch .hx svg.d{width:9px;height:14px;flex:none}
+.hch .hx svg.d.r{transform:rotate(180deg)}
+.hch .hx svg.b{width:20px;height:20px;flex:none;animation:zum 3.2s ease-in-out infinite}
+.hch .hx i{flex:1;border-left:1.5px dashed currentColor;opacity:.55;min-height:4px}
+@keyframes zum{50%{transform:translateY(-3px) rotate(8deg)}}
+.hch .mtn{position:absolute;left:50%;bottom:70px;width:min(1000px,96%);transform:translateX(-50%);color:var(--gold);opacity:.16;pointer-events:none}
+/* PREGUNTAS FRECUENTES */
+.hch .faqs{padding:100px 0;color:#f6e8cc;background:radial-gradient(45% 50% at 10% 20%,rgba(229,165,46,.2),transparent 70%),radial-gradient(45% 50% at 95% 90%,rgba(169,99,26,.3),transparent 70%),#0c0805}
+.hch .fg{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:start}
+.hch .fl{position:sticky;top:30px}
+.hch .fl h2{font-size:clamp(2rem,4vw,3rem);margin:16px 0 14px;background:linear-gradient(120deg,#fff3d3,var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hch .fl p{margin-bottom:26px;color:#dcc79f;max-width:360px}
+.hch .orn{display:flex;align-items:center;gap:10px;color:var(--gold);width:190px}
+.hch .orn i{flex:1;border-top:1.5px dashed currentColor;opacity:.55}
+.hch .orn svg{width:26px;height:26px;flex:none}
+.hch .orn svg.dd{width:11px;height:16px}
+.hch .mtn2{display:block;width:100%;max-width:320px;margin-top:40px;color:var(--gold);opacity:.35}
+.hch .fr h3{font-size:1.25rem;color:var(--gold);margin:34px 0 4px}
+.hch .fr h3:first-child{margin-top:0}
+.hch .faqs details{transition:background .3s,padding .3s}
+.hch .faqs details[open]{background:linear-gradient(90deg,rgba(229,165,46,.1),transparent);padding-left:14px}
+@media(max-width:860px){.hch .fg{grid-template-columns:1fr;gap:30px}.hch .fl{position:static}.hch .hx{display:none}.hch nav .brand>img{width:64px;height:64px}.hch .mtn{bottom:40px}}
+
+/* ADAPTABLE: TABLET Y MÓVIL */
+html{overflow-x:hidden;-webkit-text-size-adjust:100%}
+@media(max-width:1024px){
+.hch .w{padding:0 22px}
+.hch nav div{gap:16px;font-size:14px}
+.hch .hg{gap:16px}
+.hch .row{gap:36px}
+.hch .cards{gap:18px}
+.hch .card{padding:22px 16px 24px}
+.hch .fg{gap:36px}
+.hch .cta{padding:70px 40px}
+}
+@media(max-width:860px){
+.hch .hero{padding:18px 0 100px}
+.hch nav{flex-wrap:wrap;gap:12px;margin-bottom:30px}
+.hch nav div{display:flex;order:3;width:100%;overflow-x:auto;gap:22px;white-space:nowrap;padding:4px 0 8px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.hch nav div::-webkit-scrollbar{display:none}
+.hch nav div a{padding:6px 2px}
+.hch .hg{text-align:center}
+.hch .hero p.l{margin:20px auto 28px}
+.hch .hero .bs{justify-content:center}
+.hch .jars{max-width:520px;margin:10px auto 0;padding-right:0}
+.hch .cards{grid-template-columns:repeat(3,1fr);max-width:none;margin:0}
+.hch .ig,.hch .vals{grid-template-columns:1fr 1fr}
+.hch .row{gap:30px}
+.hch .row+.row{margin-top:64px}
+.hch .row .tx p{max-width:none}
+.hch .kraft{padding:110px 0 70px}
+.hch .dark,.hch .info,.hch .why,.hch .faqs{padding:70px 0}
+.hch .fl p{max-width:none}
+}
+@media(max-width:640px){
+.hch{font-size:16px}
+.hch .cards{grid-template-columns:1fr;max-width:380px;margin:auto}
+.hch .ig,.hch .vals{grid-template-columns:1fr}
+.hch .hero .bs{flex-direction:column;align-items:stretch}
+.hch .btn{text-align:center}
+.hch .cta{padding:48px 22px;min-height:0;border-radius:26px}
+.hch .ctaw{padding:0 14px 60px}
+.hch footer .w{flex-direction:column;text-align:center}
+.hch .drip{height:44px}
+.hch nav .brand>img{width:56px;height:56px}
+.hch .nm{font-size:1.15rem}
+.hch .faqs details[open]{padding-left:8px}
+.hch .mtn2{display:none}
+.hch .jars{width:122%;margin-left:-11%;max-width:none}
+}
+@media(max-width:380px){.hch .hero h1{font-size:2.2rem}.hch .nm{font-size:1.05rem}}
+</style>
+
+</head>
+<body>
+<div class="hch">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="hd" viewBox="0 0 20 30"><path d="M10 0C10 0 1 13 1 20a9 9 0 0 0 18 0C19 13 10 0 10 0Z" fill="currentColor"/></symbol>
+<symbol id="hb" viewBox="0 0 60 60"><ellipse cx="17" cy="22" rx="14" ry="7" transform="rotate(-25 17 22)" fill="currentColor"/><ellipse cx="43" cy="22" rx="14" ry="7" transform="rotate(25 43 22)" fill="currentColor"/><ellipse cx="30" cy="38" rx="9" ry="16" fill="currentColor"/><circle cx="30" cy="18" r="6" fill="currentColor"/><path d="M21 35h18M21 42h18" stroke="#0c0805" stroke-width="2.6"/><path d="M27 13l-5-8M33 13l5-8" stroke="currentColor" stroke-width="1.8" fill="none"/></symbol>
+<symbol id="hm" viewBox="0 0 300 80"><path d="M0 78 60 62 95 67 140 32 160 14 176 6 198 22 214 40 240 54 300 78M140 32 150 44 138 56 160 64M176 6 182 30 176 50M95 67 120 58 138 56" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+</defs></svg>
+<header class="hero">
+ <span class="bee" style="top:18%" aria-hidden="true">🐝</span><span class="bee" style="top:62%;animation-delay:-7s;animation-duration:19s" aria-hidden="true">🐝</span>
+ <svg class="mtn" viewBox="0 0 300 80" preserveAspectRatio="xMidYMax meet" aria-hidden="true"><use href="#hm"/></svg>
+ <div class="w">
+  <nav>
+   <a class="brand" href="#top"><img src="img/emblema.png" alt="Hi! Cusco Honey"><span class="hx" aria-hidden="true"><svg class="d"><use href="#hd"/></svg><i></i><svg class="b"><use href="#hb"/></svg><i></i><svg class="d r"><use href="#hd"/></svg></span><span class="nm">HI!<br>CUSCO<br>HONEY</span><span class="hx" aria-hidden="true"><svg class="d"><use href="#hd"/></svg><i></i><svg class="b"><use href="#hb"/></svg><i></i><svg class="d r"><use href="#hd"/></svg></span></a>
+   <div><a href="#mieles">Mieles</a><a href="#panal">Panal y polen</a><a href="#info">Info</a><a href="#nosotros">Nosotros</a><a href="#faq">Preguntas</a><a href="#pedir">Pedir</a></div>
+  </nav>
+  <div class="hg" id="top">
+   <div>
+    <h1>Miel que sabe a los Andes</h1>
+    <p class="l">Miel de abeja de floración silvestre, producida y envasada en Cusco. Sin nada añadido, directo de la colmena a tu mesa.</p>
+    <div class="bs"><a class="btn b1" href="#mieles">Ver nuestras mieles</a><a class="btn b2" href="https://wa.me/51960776697?text=Hola%2C%20quiero%20pedir%20miel%20Hi!%20Cusco%20Honey" target="_blank" rel="noopener">Escríbenos</a></div>
+   </div>
+   <div class="jars">
+    <img src="img/miel-250.webp" alt="Miel Hi! Cusco Honey 250 g">
+    <img src="img/miel-1kg.webp" alt="Miel Hi! Cusco Honey 1 kg">
+    <img src="img/miel-500.webp" alt="Miel Hi! Cusco Honey 500 g">
+   </div>
+  </div>
+ </div>
+</header>
+
+<section class="kraft" id="mieles">
+ <svg class="drip" viewBox="0 0 1440 140" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="hg" x1="0" x2="1"><stop offset="0" stop-color="#a9631a"/><stop offset=".5" stop-color="#e5a52e"/><stop offset="1" stop-color="#b8731f"/></linearGradient></defs><path fill="url(#hg)" d="M0 0H1440V30L1330 30C1322 30 1322 92 1304 92C1286 92 1290 30 1270 30L1120 30C1112 30 1112 130 1092 130C1072 130 1076 30 1060 30L900 30C893 30 893 76 877 76C861 76 865 30 850 30L650 30C642 30 642 110 624 110C606 110 610 30 590 30L420 30C412 30 412 70 397 70C382 70 386 30 370 30L180 30C172 30 172 120 152 120C132 120 136 30 120 30L0 30Z"/></svg>
+ <div class="w">
+  <h2 class="rv">Nuestras mieles</h2>
+  <p class="sub rv">Misma miel pura de floración silvestre en tres tamaños, en frascos con forma de colmena.</p>
+  <div class="cards">
+   <article class="card rv"><img loading="lazy" src="img/miel-250.webp" alt="Frasco de miel 250 g"><h3>250 g</h3><p>Ideal para probarla o regalarla.</p><a class="btn" href="https://wa.me/51960776697?text=Hola%2C%20quiero%20miel%20de%20250%20g" target="_blank" rel="noopener">Pedir este frasco</a></article>
+   <article class="card rv"><img loading="lazy" src="img/miel-500.webp" alt="Frasco de miel 500 g"><h3>500 g</h3><p>El tamaño para el desayuno de cada día.</p><a class="btn" href="https://wa.me/51960776697?text=Hola%2C%20quiero%20miel%20de%20500%20g" target="_blank" rel="noopener">Pedir este frasco</a></article>
+   <article class="card rv"><img loading="lazy" src="img/miel-1kg.webp" alt="Frasco de miel 1 kg"><h3>1 kg</h3><p>Para toda la familia y para cocinar.</p><a class="btn" href="https://wa.me/51960776697?text=Hola%2C%20quiero%20miel%20de%201%20kg" target="_blank" rel="noopener">Pedir este frasco</a></article>
+  </div>
+ </div>
+</section>
+
+<section class="dark">
+ <div class="w">
+  <div class="row" id="panal">
+   <div class="rv"><img loading="lazy" src="img/panal.webp" alt="Caja de panal de abeja con miel, 500 g"></div>
+   <div class="tx rv">
+    <h2>Panal de abeja con miel</h2>
+    <p>El panal tal como lo construyen las abejas, con la miel todavía dentro. Se presenta en una caja de cartón kraft con ventana para que veas lo que llevas.</p>
+    <ul><li>500 g</li><li>100% natural</li><li>Directo de la naturaleza</li></ul>
+    <a class="btn b1" href="https://wa.me/51960776697?text=Hola%2C%20quiero%20el%20panal%20con%20miel" target="_blank" rel="noopener">Pedir panal</a>
+   </div>
+  </div>
+  <div class="row rev" id="polen">
+   <div class="rv"><img loading="lazy" src="img/polen.webp" alt="Caja de polen de abeja, 250 g"></div>
+   <div class="tx rv">
+    <h2>Polen de abeja</h2>
+    <p>Gránulos de polen recogidos por las abejas, ricos en nutrientes, vitaminas y minerales. Lo puedes sumar a tu yogur, tus batidos o tu avena.</p>
+    <ul><li>250 g</li><li>Sin conservantes</li><li>Sin aditivos</li></ul>
+    <a class="btn b1" href="https://wa.me/51960776697?text=Hola%2C%20quiero%20polen%20de%20abeja" target="_blank" rel="noopener">Pedir polen</a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="info" id="info">
+ <div class="w">
+  <h2 class="rv">Todo sobre nuestra miel</h2>
+  <p class="sub rv">Lo que debes saber antes de probarla.</p>
+  <div class="ig">
+   <div class="ib rv"><h3>Miel de floración silvestre</h3><p>Las abejas la elaboran con el néctar de flores silvestres de Cusco. Su color y sabor pueden variar un poco según la temporada, porque no se mezcla ni se corrige.</p></div>
+   <div class="ib rv"><h3>Cómo usarla</h3><ul><li>En el desayuno, con pan, avena o yogur</li><li>Para endulzar infusiones sin que hierva</li><li>En postres, aderezos y marinados</li></ul></div>
+   <div class="ib rv"><h3>Si cristaliza</h3><p>Es normal y es señal de miel natural. Para devolverla a líquida, pon el frasco cerrado en agua tibia unos minutos, sin hervir.</p></div>
+   <div class="ib rv"><h3>Cómo conservarla</h3><p>En un lugar fresco y seco, bien cerrada y lejos del sol directo. No hace falta refrigerarla.</p></div>
+   <div class="ib rv"><h3>Panal con miel</h3><p>Se come completo: la cera es comestible. Puedes untarlo en pan tostado o acompañar quesos.</p></div>
+   <div class="ib rv"><h3>Polen de abeja</h3><p>Una cucharadita sobre yogur, frutas o batidos. Empieza con poca cantidad si es tu primera vez.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="why" id="nosotros">
+ <div class="w wg">
+  <img loading="lazy" class="em rv" src="img/emblema.png" alt="Emblema Hi! Cusco Honey con Machu Picchu y abejas">
+  <div class="rv">
+   <h2>Hecha en Cusco, a la sombra de Machu Picchu</h2>
+   <p style="margin-top:14px;max-width:520px;color:#3b2a17">Cada frasco lleva el paisaje donde las abejas trabajan. Cuidamos que la miel llegue a ti tal como sale de la colmena.</p>
+   <div class="vals">
+    <div class="val"><b>100% natural</b><span>Solo miel de abeja, sin ingredientes añadidos.</span></div>
+    <div class="val"><b>Floración silvestre</b><span>Flores de los valles y alturas cusqueñas.</span></div>
+    <div class="val"><b>Producto peruano</b><span>Producida y envasada en San Sebastián, Cusco.</span></div>
+    <div class="val"><b>Registro sanitario</b><span>Con registro SENASA en cada frasco.</span></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="faqs" id="faq">
+ <div class="w fg">
+  <div class="fl rv">
+   <div class="orn" aria-hidden="true"><i></i><svg><use href="#hb"/></svg><i></i><svg class="dd"><use href="#hd"/></svg></div>
+   <h2>Preguntas frecuentes</h2>
+   <p>Las dudas más comunes sobre nuestra miel, el panal y el polen, y cómo pedirlos.</p>
+   <a class="btn b1" href="https://wa.me/51960776697?text=Hola%2C%20tengo%20una%20duda%20sobre%20Hi!%20Cusco%20Honey" target="_blank" rel="noopener">¿Otra duda? Escríbenos</a>
+   <svg class="mtn2" viewBox="0 0 300 80" aria-hidden="true"><use href="#hm"/></svg>
+  </div>
+  <div class="fr rv">
+   <h3>Sobre la miel</h3>
+   <details><summary>¿Es 100% natural?</summary><p>Sí. El único ingrediente que indica la etiqueta es miel de abeja al 100%, sin mezclas ni añadidos.</p></details>
+   <details><summary>¿Tiene azúcares agregados?</summary><p>No. Solo contiene miel. Eso sí, la miel tiene azúcares propios de forma natural, así que no es un producto «sin azúcar». Si controlas tu consumo de azúcar, por ejemplo por diabetes, consulta antes con tu médico.</p></details>
+   <details><summary>¿Qué significa «floración silvestre»?</summary><p>Que las abejas la elaboran con el néctar de flores silvestres de la zona, no de un solo cultivo. Por eso el color y el sabor pueden variar un poco entre temporadas.</p></details>
+   <details><summary>Mi miel se puso dura o con textura de azúcar. ¿Está mala?</summary><p>No, es la cristalización, un proceso normal en la miel natural. Para devolverla a su textura líquida, deja el frasco cerrado en agua tibia unos minutos, sin hervir.</p></details>
+   <h3>Consumo y cuidados</h3>
+   <details><summary>¿Es recomendada para niños?</summary><p>Sí, a partir de 1 año y con moderación. A menores de 1 año no se les debe dar miel: puede contener esporas que su organismo aún no controla (botulismo infantil).</p></details>
+   <details><summary>¿Para qué se recomienda?</summary><p>Es un alimento y endulzante natural, no un medicamento. Se usa en el desayuno, con pan, avena o yogur, en infusiones tibias, postres y aderezos. Si tienes una condición de salud o tomas medicación, consulta con tu médico.</p></details>
+   <details><summary>¿Se puede comer la cera del panal?</summary><p>Sí, es comestible. Puedes masticarlo, untarlo en pan tostado o acompañarlo con quesos.</p></details>
+   <details><summary>¿Quién no debería consumir el polen o la miel?</summary><p>Las personas con alergia a productos de la colmena o al polen no deben consumirlos. Si es tu primera vez con el polen, empieza con una cantidad pequeña. Si estás embarazada o en lactancia, consulta con tu médico.</p></details>
+   <h3>Conservación y pedidos</h3>
+   <details><summary>¿Cuánto dura y cómo la guardo?</summary><p>La fecha de vencimiento está indicada en la tapa. Guárdala bien cerrada, en un lugar fresco y seco; no necesita refrigeración.</p></details>
+   <details><summary>¿Tienen registro sanitario?</summary><p>Sí. Cada frasco lleva el registro SENASA N°41NK-LN17740 en la etiqueta.</p></details>
+   <details><summary>¿Dónde se produce?</summary><p>Se produce y se envasa en San Sebastián, Cusco, por EDECOR E.I.R.L., bajo la marca API Cusco.</p></details>
+   <details><summary>¿Cómo hago mi pedido?</summary><p>Escríbenos por WhatsApp con el producto y el tamaño que quieres: miel de 250 g, 500 g o 1 kg, panal de 500 g o polen de 250 g. Te confirmamos precio y disponibilidad.</p></details>
+   <details><summary>¿Hacen envíos?</summary><p>Escríbenos por WhatsApp con tu ciudad y te confirmamos si llegamos a tu zona, cuánto cuesta y cuánto demora.</p></details>
+  </div>
+ </div>
+</section>
+
+<div class="ctaw" id="pedir">
+ <div class="cta rv">
+  <div>
+   <h2>Del panal a tu mesa</h2>
+   <p>Cuéntanos qué tamaño quieres y te respondemos por WhatsApp con precio y envío. Nuestro número: <b>960 776 697</b>.</p>
+   <a class="btn b3" href="https://wa.me/51960776697?text=Hola%2C%20quiero%20hacer%20un%20pedido%20de%20Hi!%20Cusco%20Honey" target="_blank" rel="noopener">Hacer mi pedido por WhatsApp</a>
+  </div>
+ </div>
+</div>
+
+<footer>
+ <div class="w">
+  <img loading="lazy" src="img/emblema.png" alt="Hi! Cusco Honey">
+  <div>
+   <b>API Cusco</b> · Producido y envasado por EDECOR E.I.R.L.<br>
+   Av. Qollasuyo D1, San Sebastián, Cusco · RUC 20490555832<br>
+   WhatsApp: <a href="https://wa.me/51960776697" target="_blank" rel="noopener">960 776 697</a><br>
+   <a href="https://www.apicusco.com" target="_blank" rel="noopener">www.apicusco.com</a> · R.S. SENASA N°41NK-LN17740
+   <small>No suministrar a niños menores de 1 año. Mantener en lugar fresco y seco. No apto para personas con alergias a productos de la colmena.</small>
+  </div>
+ </div>
+</footer>
+</div>
+
+<script>
+(function(){var e=document.querySelectorAll('.hch .rv');if(!('IntersectionObserver' in window)){e.forEach(function(x){x.classList.add('on')});return}
+var o=new IntersectionObserver(function(l){l.forEach(function(i){if(i.isIntersecting){i.target.classList.add('on');o.unobserve(i.target)}})},{threshold:.15});e.forEach(function(x){o.observe(x)})})();
+</script>
+</body>
+</html>
